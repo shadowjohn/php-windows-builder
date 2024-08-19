@@ -1,4 +1,4 @@
-name: Build PHP 8.3.8 sqlite3 with xdebug
+name: Build PHP 8.3.8 extension_xdebug
 on:
   workflow_dispatch:
 jobs:
