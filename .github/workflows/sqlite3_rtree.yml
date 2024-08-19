@@ -14,7 +14,7 @@ jobs:
         with:
           extension-url: https://github.com/winlibs/sqlite3
           extension-ref: '3.47.0'
-          php-version: '8.3.8'
+          php-version: '8.3'
           ts: ts
           arch: x64
           args: --enable-sqlite3 --enable-sqlite3-rtree
