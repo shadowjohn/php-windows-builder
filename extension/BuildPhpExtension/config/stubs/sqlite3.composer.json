@@ -1,0 +1,9 @@
+{
+  "php-sqlite3": {
+    "configure-options": [
+      {
+        "name": "enable-sqlite3-rtree"
+      }
+    ]
+  }
+}
