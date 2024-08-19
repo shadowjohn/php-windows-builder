@@ -12,7 +12,7 @@ jobs:
       - name: Build the extension
         uses: php/php-windows-builder/extension@v1
         with:
-          extension-url: https://github.com/sqlite/sqlite
+          extension-url: https://github.com/winlibs/sqlite3
           extension-ref: '3.47.0'
           php-version: '8.3.8'
           ts: ts
