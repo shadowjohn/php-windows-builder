@@ -1,4 +1,4 @@
-name: Build PHP 8.3.8 sqlite3 with rtree
+name: Build PHP 8.3.8 sqlite3 with xdebug
 on:
   workflow_dispatch:
 jobs:
@@ -15,10 +15,10 @@ jobs:
       - name: Build the extension
         uses: php/php-windows-builder/extension@v1
         with:
-          extension-url: https://github.com/winlibs/sqlite3
-          extension-ref: '3.47.0'
+          extension-url: https://github.com/xdebug/xdebug
+          extension-ref: '3.3.1'
           php-version: '8.3.8'
           ts: ts
           arch: x64
-          args: --enable-sqlite3 --enable-sqlite3-rtree
+          args: --enable-xdebug
           libs: zlib
