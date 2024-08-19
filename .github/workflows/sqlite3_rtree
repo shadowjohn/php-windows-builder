@@ -1,0 +1,21 @@
+name: Build PHP 8.3.8
+on:
+  workflow_dispatch:
+jobs:
+  php:
+    strategy:
+      matrix:
+        arch: [x64]
+        ts: [ts]
+    runs-on: windows-2019
+    steps:
+      - name: Build the extension
+        uses: php/php-windows-builder/extension@v1
+        with:
+          extension-url: https://github.com/sqlite/sqlite
+          extension-ref: '3.47.0'
+          php-version: '8.3.8'
+          ts: ts
+          arch: x64
+          args: --enable-sqlite3 --enable-sqlite3-rtree
+          libs: zlib
