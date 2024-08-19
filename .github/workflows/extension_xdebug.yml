@@ -13,6 +13,6 @@ jobs:
         with:
           extension-url: https://github.com/xdebug/xdebug
           extension-ref: '3.3.1'
-          php-version-list: '8.3.8'
+          php-version-list: '8.3'
           arch-list: 'x64'
           ts-list: 'ts'
