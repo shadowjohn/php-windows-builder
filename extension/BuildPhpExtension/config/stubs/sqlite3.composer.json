@@ -1,5 +1,5 @@
 {
-  "php-sqlite3": {
+  "php-ext": {
     "configure-options": [
       {
         "name": "enable-sqlite3-rtree"
