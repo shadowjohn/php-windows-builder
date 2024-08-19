@@ -16,3 +16,4 @@ jobs:
           php-version-list: '8.3'
           arch-list: 'x64'
           ts-list: 'ts'
+          allow-old-php-versions: true
