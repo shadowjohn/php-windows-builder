@@ -1,0 +1,18 @@
+name: Build PHP 8.3.8 extension_sqlite3
+on:
+  workflow_dispatch:
+jobs:
+  get-extension-matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Get the extension matrix
+        id: extension-matrix
+        uses: php/php-windows-builder/extension-matrix@v1
+        with:
+          extension-url: https://github.com/sqlite/sqlite
+          extension-ref: '3.47.0'
+          php-version-list: '8.3'
+          arch-list: 'x64'
+          ts-list: 'ts'
