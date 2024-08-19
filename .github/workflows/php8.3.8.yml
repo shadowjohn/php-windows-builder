@@ -15,6 +15,6 @@ jobs:
       - name: Build
         uses: php/php-windows-builder/php@v1
         with:
-          php-version: '8.3.8'
+          php-version: '8.3.8' 
           arch: ${{ matrix.arch }}
           ts: ${{ matrix.ts }}
