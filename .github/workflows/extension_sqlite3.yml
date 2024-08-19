@@ -2,8 +2,12 @@ name: Build PHP 8.3.8 extension_sqlite3
 on:
   workflow_dispatch:
 jobs:
-  get-extension-matrix:
-    runs-on: ubuntu-latest
+  php:
+    strategy:
+      matrix:
+        arch: [x64]
+        ts: [ts]
+    runs-on: windows-2019
     steps:
       - name: Checkout
         uses: actions/checkout@v4
