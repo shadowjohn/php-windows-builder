@@ -18,4 +18,4 @@ jobs:
           ts: 'ts'
           arch: 'x64'
           args: '--enable-xdebug'
-          libs: 'zlib'
+          
