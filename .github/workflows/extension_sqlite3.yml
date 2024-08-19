@@ -18,12 +18,12 @@ jobs:
           ts-list: 'ts'
           allow-old-php-versions: true
       - name: Build the extension
-        uses: php/php-windows-builder/extension@v1
+        uses: php/php-windows-builder/extension-matrix@v1
         with:
           extension-url: https://github.com/sqlite/sqlite
           extension-ref: '3.47.0'
           php-version: '8.3'
-          ts: nts
+          ts: ts
           arch: x64
           args: --enable-sqlite3-rtree
           libs: zlib
